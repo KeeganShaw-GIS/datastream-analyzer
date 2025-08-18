@@ -1,5 +1,6 @@
 # datastream-analyzer
 Advanced analytics tool for Datastream 
 
-[Link to datastream]([https://www.genome.gov/](https://datastream.org/en-ca/))
+See the following for info on datastream:
+[https://www.genome.gov/](https://datastream.org/en-ca/
 
