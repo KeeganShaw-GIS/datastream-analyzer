@@ -10,7 +10,7 @@
 </script>
 
 <div class="w-full">
-	<Label class="pb-2" for="monIdLoc">Select Monitoring ID</Label>
+	<Label class="pb-2" for="monIdLoc">Select Monitoring Location ID</Label>
 	<Select.Root name="monIdLoc" type="single" onValueChange={(value) => onSelect(value)}>
 		<Select.Trigger class="w-full">{selected}</Select.Trigger>
 		<Select.Content class="w-full">
