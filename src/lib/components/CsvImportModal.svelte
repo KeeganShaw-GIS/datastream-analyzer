@@ -44,7 +44,11 @@
 		<Dialog.Header>
 			<Dialog.Title>Import Datastream data</Dialog.Title>
 			<Dialog.Description>
-				Download data from <a href="https://datastream.org/en-ca/"> Here</a>
+				<p>
+					Sample data can be found <a class="text-lg" href="https://doi.org/10.25976/vahx-dq27">
+						Here</a
+					>
+				</p>
 			</Dialog.Description>
 		</Dialog.Header>
 		<form method="post" enctype="multipart/form-data" onsubmit={handleSubmit}>
