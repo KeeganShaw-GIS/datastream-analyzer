@@ -5,7 +5,7 @@ export type RowError = {
 
 export type ImportStatus = {
 	rowErrors?: RowError[];
-	status: 'ERROR'| 'SUCCESS';
+	status: 'ERROR' | 'SUCCESS';
 	filename?: string;
 	message: string;
 };

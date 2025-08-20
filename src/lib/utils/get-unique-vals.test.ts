@@ -1,4 +1,4 @@
-import type { Datastream } from '$lib/schema/datastream';
+
 import { describe, test, expect } from 'vitest';
 import { getUniqueValues } from './get-unique-vals';
 
@@ -19,6 +19,7 @@ describe('getUniqueValues', () => {
 	});
 
 	test('returns empty array for empty input', () => {
+		// eslint-disable-next-line @typescript-eslint/no-explicit-any
 		expect(getUniqueValues([], 'a' as any)).toEqual([]);
 	});
 });

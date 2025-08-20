@@ -7,19 +7,23 @@
 		statisticType: StatisticType;
 	};
 	let { data, statisticType }: ComponentProps = $props();
-	// Should move out into a seperate file
+	// Should move out into a seperate file - could use tests and the isolation
 	function getMethod(methodType: StatisticType) {
-		return (data: Datastream[]) => {
-			if (data.length === 0) return 0;
-			const sum = data.reduce((acc, cur) => acc + (cur.ResultValue || 0), 0);
-			return sum / data.length;
-		};
+		if (methodType === 'AVERAGE') {
+			return (data: Datastream[]) => {
+				if (data.length === 0) return 0;
+				const sum = data.reduce((acc, cur) => acc + (cur.ResultValue || 0), 0);
+				return sum / data.length;
+			};
+		}
+		// fallback for unsupported stats
+		return () => 0;
 	}
 	const statisticValue = $derived(data.length > 0 ? getMethod(statisticType)(data) : '-');
 	const statisticUnit = $derived(data.length > 0 ? data[0].ResultUnit : '-');
 </script>
 
-<div class="w-full flex gap-4">
+<div class="flex w-full gap-4">
 	<Card.Root class="@container/card flex-1">
 		<Card.Header>
 			<Card.Description>Count</Card.Description>

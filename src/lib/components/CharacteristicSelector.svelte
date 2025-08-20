@@ -14,7 +14,7 @@
 	<Select.Root name="monIdLoc" type="single" onValueChange={(value) => onSelect(value)}>
 		<Select.Trigger class="w-full">{selected}</Select.Trigger>
 		<Select.Content class="w-full">
-			{#each selectOptions as option}
+			{#each selectOptions as option (option)}
 				<Select.Item value={option}>{option}</Select.Item>
 			{/each}
 		</Select.Content>

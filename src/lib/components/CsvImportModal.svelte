@@ -2,13 +2,12 @@
 	import { Input } from '$lib/components/ui/input/index.js';
 	import { Button, buttonVariants } from '$lib/components/ui/button/index.js';
 	import * as Dialog from '$lib/components/ui/dialog/index.js';
-	import { streamParseCsv, type StreamParseCsvOutput } from '$lib/utils/open-parse-csv';
+	import { streamParseCsv } from '$lib/utils/open-parse-csv';
 	import { datastreamSchema, type Datastream } from '$lib/schema/datastream';
-	import type { ImportStatus, RowError } from '../../routes/data-viewer/schema';
+	import type { ImportStatus } from '../../routes/data-viewer/schema';
 
 	type ComponentProps = { setImportedData: (data: Datastream[]) => void };
 
-	let form;
 	let files: FileList | null | undefined = $state();
 	let importStatus: ImportStatus | undefined = $state();
 	let { setImportedData }: ComponentProps = $props();

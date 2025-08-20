@@ -10,7 +10,7 @@
 
 	let importedRecords: Datastream[] | undefined = $state();
 	let selectedLocationId: string | undefined = $state();
-	let selectedCharacteristic: string | undefined = $state("Temperature, water");
+	let selectedCharacteristic: string | undefined = $state('Temperature, water');
 
 	const monitoringlocationIds = $derived(
 		getUniqueValues(importedRecords || [], 'MonitoringLocationID') as string[]
