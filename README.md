@@ -2,7 +2,9 @@
 
 Advanced analytics tool for Datastream
 
-checkout the running app: [Here](https://datastream-analyzer.vercel.app/data-viewer)
+checkout the running app: 
+
+[Application](https://datastream-analyzer.vercel.app/data-viewer)
 
 Specifications:
 
