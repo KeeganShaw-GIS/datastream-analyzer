@@ -1,6 +1,9 @@
 # datastream-analyzer
 
 Advanced analytics tool for Datastream
+
+checkout the running app: [Here](https://datastream-analyzer.vercel.app/data-viewer)
+
 Specifications:
 
 [Wireframing and description](https://github.com/KeeganShaw-GIS/datastream-analyzer/wiki/Prototype-%E2%80%90-2025%E2%80%9008%E2%80%9017)
